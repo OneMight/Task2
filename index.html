@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lifestyle</title>
-    <link rel="stylesheet" href="styles.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..18,400;1,14..18,400&family=Montserrat:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap" as="style"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..18,400;1,14..18,400&family=Montserrat:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css"/>
 </head>
 <body>
-   <main class="columnDiv">
+   <div class="columnDiv">
         <header class="welcomeDiv_header">
             <nav class="welcomeDiv_nav">
                 <a href="#">Disover LifeBlend</a>
@@ -20,11 +22,16 @@
             </nav>
             <button class="welcomeDiv_contact">Contact us</button>
         </header>
-            <img src="./images/firstCon.png" class="welcomeDiv_img" alt="">
+        <div class="welcomeDiv_imageDiv">
+            <picture>
+                <img fetchpriority="high" src="./images/firstCon.jpg" class="welcomeDiv_img" alt="yoga-pose">
+            </picture>
+        </div>
+            
         <section class="welcomeDiv_section">
-            <h1 class="welcomeDiv_motivateTitle">Stay tuned,
+            <h2 class="welcomeDiv_motivateTitle">Stay tuned,
                 stay healthy
-            </h1>
+            </h2>
             <div class="welcomeDiv_article">
                 <p class="welcomeDiv_desc">Experience a comprehensive blend of content and resources to enhance and inspire every facet of your lifestyle.</p>
                 <div class="welcomeDiv_buttonsLogin">
@@ -33,12 +40,12 @@
                 </div>
             </div>
         </section>
-   </main>
-   <main class="rowDiv">
+   </div>
+   <div class="rowDiv">
     <article class="rowDiv_leftCon">
         <div class="rowDiv_top">
             <p class="smallText">Revolutionize</p>
-            <h1 class="title">Discover a New Way of Living</h1>
+            <h2 class="title">Discover a New Way of Living</h2>
             <p class="description">LifeBlend Hub offers a unique and comprehensive approach to modern living. With a curated blend of content and resources, we aim to enhance and inspire every facet of your lifestyle.</p>
         </div>
         <div class="rowDiv_middle">
@@ -54,15 +61,17 @@
         <div class="bottom_buttons">
             <button class="welcomeDiv_button welcomeDiv_button_empty">Learn more</button>
             <button class="rowDiv_button-borderless">Sign Up 
-                <img src="./images/arrowRight.png" alt="">
+                <img src="./images/arrowRight.svg" alt="arrow-right">
             </button>
         </div>
     </article>
     <div class="rowDiv_rightCon">
-        <img src="./images/secondCon.png" alt="">
+        <picture>
+            <img fetchpriority="high" src="./images/secondCon.svg" alt="picture">
+        </picture>
     </div>
-   </main>
-   <main class="columnDiv discoverProduction">
+   </div>
+   <div class="columnDiv discoverProduction">
     <div class="columnDiv_top">
         <p class="smallText">Discover</p>
         <h1 class="title">Unlock the Power of LifeBlend Hub</h1>
@@ -70,17 +79,17 @@
     </div>
     <section class="columnDiv_middle">
         <div class="columnDiv_middle-card">
-            <img src="./images/card1.png" class="columnDiv_cardImg" alt="">
+            <img fetchpriority="low" src="./images/card1.svg" class="columnDiv_cardImg" alt="">
             <h2 class="columnDiv_middle-cardTitle">Health and Wellness</h2>
             <p class="columnDiv_middle-cardDesc">Discover expert advice and tips on maintaining a healthy lifestyle.</p>
         </div>
         <div class="columnDiv_middle-card">
-            <img src="./images/card2.png" class="columnDiv_cardImg" alt="">
+            <img fetchpriority="low" src="./images/card2.svg" class="columnDiv_cardImg" alt="">
             <h2 class="columnDiv_middle-cardTitle">Boost Your Productivity</h2>
             <p class="columnDiv_middle-cardDesc">Learn effective strategies to maximize your productivity and achieve your goals.</p>
         </div>
         <div class="columnDiv_middle-card">
-            <img src="./images/card3.png" class="columnDiv_cardImg" alt="">
+            <img fetchpriority="low" src="./images/card3.svg" class="columnDiv_cardImg" alt="">
             <h2 class="columnDiv_middle-cardTitle">Find Joy in Leisure</h2>
             <p class="columnDiv_middle-cardDesc">Discover exciting activities and hobbies to make the most of your leisure time.</p>
         </div>
@@ -88,86 +97,86 @@
     <div class="bottom_buttons columnDiv_buttons">
         <button class="welcomeDiv_button welcomeDiv_button_empty columnDiv_buttons-Join">Join</button>
         <button class="rowDiv_button-borderless white">Learn More
-            <img src="./images/arrowRight.png" alt="">
+            <img src="./images/arrowRight.svg" alt="arrow-right">
         </button>
     </div>
-   </main>
-   <main class="rowDiv fourthCon">
+   </div>
+   <div class="rowDiv fourthCon">
     <section class="rowDiv_leftCon fourthCon_leftCon">
         <div class="rowDiv_top">
             <p class="smallText">Discover</p>
-            <h1 class="title">Unlock the Secrets to a Balanced Lifestyle</h1>
+            <h2 class="title">Unlock the Secrets to a Balanced Lifestyle</h2>
             <p class="description">LifeBlend Hub provides a comprehensive blend of content and resources to help you achieve balance in every aspect of your life. From wellness tips and personal development strategies to home organization hacks and travel inspiration, we've got you covered.</p>
         </div>
        <div class="bottom_buttons m-0">
             <button class="welcomeDiv_button welcomeDiv_button_empty">Learn more</button>
             <button class="rowDiv_button-borderless">Sign Up 
-                <img src="./images/arrowRight.png" alt="">
+                <img src="./images/arrowRight.svg" alt="arrow-right">
             </button>
         </div>
     </section>
     <div class="rowDiv_rightCon">
-        <img src="./images/bycycle.png" class="columnDiv_cardImg" alt="">
+        <img src="./images/bicycle.jpg" class="columnDiv_cardImg" alt="">
     </div>
-   </main>
-   <main class="columnDiv fivesCon">
+   </div>
+   <div class="columnDiv fivesCon">
     <h1 class="columnDiv_title">Discover a World of Inspiration and Resources on LifeBlend Hub</h1>
     <section class="exploreResoures">
         <article class="exploreResoures_card">
-            <img src="./images/runners.png" class="exploreResoures_cardImg"  alt="runners">
+            <img src="./images/runners.svg" class="exploreResoures_cardImg"  alt="runners">
             <h2 class="exploreResoures_title">Unlock Your Full Potential with LifeBlend Hub's Comprehensive Content</h2>
             <p class="exploreResoures_description">Engage with our curated content and resources to enhance every aspect of your lifestyle.</p>
             <button class="rowDiv_button-borderless white">Explore
-                <img src="./images/arrowRight.png"  alt="arrow-right">
+                <img src="./images/arrowRight.svg"  alt="arrow-right">
             </button>
         </article>
         <article class="exploreResoures_card">
-            <img src="./images/field.png" class="exploreResoures_cardImg"  alt="field">
+            <img src="./images/field.svg" class="exploreResoures_cardImg"  alt="field">
             <h2 class="exploreResoures_title">Stay Informed and Inspired with LifeBlend Hub's Diverse Content Content</h2>
             <p class="exploreResoures_description">Access our extensive collection of articles, videos, and guides to enrich your daily life.</p>
             <button class="rowDiv_button-borderless white">Discover
-                <img src="./images/arrowRight.png"  alt="arrow-right">
+                <img src="./images/arrowRight.svg"  alt="arrow-right">
             </button>
         </article>
         <article class="exploreResoures_card">
-            <img src="./images/boots-angle.png" class="exploreResoures_cardImg"   alt="boots-angle">
+            <img src="./images/boots-angle.svg" class="exploreResoures_cardImg"   alt="boots-angle">
             <h2 class="exploreResoures_title">Transform Your Lifestyle with LifeBlend Hub's Expertly Curated Resources</h2>
             <p class="exploreResoures_description">Find the tools and resources you need to achieve your goals and live your best life.</p>
             <button class="rowDiv_button-borderless white">
                 Get Started
-                <img src="./images/arrowRight.png"  alt="arrow-right">
+                <img src="./images/arrowRight.svg"  alt="arrow-right">
             </button>
         </article>
     </section>
-   </main>
-   <main class="rowDiv sixCon">
+   </div>
+   <div class="rowDiv sixCon">
     <section class="rowDiv_leftCon sixCon_leftCon">
         <div class="rowDiv_top sixCon_top">
-            <h1 class="title sixCon_title">Discover the Impact of LifeBlend Hub with These Fascinating Statistics</h1>
+            <h2 class="title sixCon_title">Discover the Impact of LifeBlend Hub with These Fascinating Statistics</h2>
             <p class="sixCon_description">LifeBlend Hub has reached millions of users worldwide, providing valuable resources and inspiring content to enhance their modern lifestyles.</p>
         </div>
         <div class="rowDiv_middle sixCon_middle">
             <div class="sixCon_middle-div">
-                <h1 class="sixCon_middle-title">50%</h2>
+                <h2 class="sixCon_middle-title">50%</h2>
                 <p class="sixCon_middle-desc">Users report improved well-being and satisfaction with LifeBlend Hub.</p>
             </div>
             <div class="sixCon_middle-div">
-                <h1 class="sixCon_middle-title">50%</h2>
+                <h2 class="sixCon_middle-title">50%</h2>
                 <p class="sixCon_middle-desc">LifeBlend Hub has become an essential part of users' lives.</p>
             </div>
         </div>
         <div class="bottom_buttons m-0">
             <button class="welcomeDiv_button welcomeDiv_button_empty">Learn more</button>
             <button class="rowDiv_button-borderless">Sign Up 
-                <img src="./images/arrowRight.png" alt="arrow-right">
+                <img src="./images/arrowRight.svg" alt="arrow-right">
             </button>
         </div>  
     </section>
     <div class="rowDiv_rightCon sixCon_img">
-        <img src="./images/pair-running.png" class="columnDiv_cardImg" alt="pair-running">
+        <img src="./images/pair-running.svg" class="columnDiv_cardImg" alt="pair-running">
     </div>
-   </main>
-   <main class="predFooter">
+   </div>
+   <div class="predFooter">
     <div class="predFooter_subscriptionText">
         <h1 class="predFooter_title">Get the Latest LifeBlend Updates</h1>
         <p class="predFooter_desc">Subscribe to our newsletter for regular updates on lifestyle trends and tips.</p>
@@ -179,8 +188,8 @@
         </div>
         <p class="predFooter_terms">By clicking Sign Up, you agree to our Terms and Conditions.</p>
     </div>
-   </main>
-   <main class="contact">
+   </div>
+   <div class="contact">
     <div class="contact_methods">
         <div>
             <p class="smallText">Connect</p>
@@ -188,31 +197,31 @@
             <p class="description">Have a question or need assistance? We're here to help!</p>
         </div>
         <div class="contact_information">
-            <img src="./images/Mail.png" alt="">
+            <img src="./images/Mail.png" alt="mail">
             <h2>Email</h2>
             <p>Send us an email</p>
             <p>hello@lifeblendhub.com</p>
         </div>
         <div class="contact_information">
-            <img src="./images/Phone.png" alt="">
+            <img src="./images/Phone.png" alt="phone">
             <h2>Phone</h2>
             <p>Give us a call</p>
             <p>+1 (555) 123-4567</p>
         </div>
         <div class="contact_information">
-            <img src="./images/Geo.png" alt="">
+            <img src="./images/Geo.png" alt="geo">
             <h2>Office</h2>
             <p>123 Main St, Anytown, USA</p>
             <button class="rowDiv_button-borderless contact_directions">
                 Get Directions
-                <img src="./images/arrowRight.png" alt="">
+                <img src="./images/arrowRight.svg" alt="arrow-right">
             </button>
         </div>
     </div>
     <div class="contact_img">
-        <img src="./images/tennis.png" alt="">
+        <img src="./images/tennis.jpg" alt="">
     </div>
-   </main>
+   </div>
    <footer class="footer">
     <div class="footer_subscription">
      <div class="footer_subscriptionText">
