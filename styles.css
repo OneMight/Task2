@@ -27,6 +27,9 @@ html, body {
     width: 100%;
     margin: 15px 0;
 }
+.menu{
+    display: none;
+}
 .welcomeDiv_nav{
     display: flex;
     gap: 30px;
@@ -217,6 +220,7 @@ html, body {
     flex-direction: column;
     justify-content: space-between;
     gap: 19px;
+    width: 31%;
 }
 .columnDiv_buttons{
     margin-top: 80px;
@@ -500,4 +504,328 @@ html, body {
 }
 .footer_social{
     padding-top: 20px;
+}
+.rowDiv_rightCon > img, .contact_img > img{
+    width: 98%;
+}
+@media screen and (max-width : 1351px) {
+    .exploreResoures{
+        padding: 40px 0;
+        flex-wrap: wrap;
+    }
+    .exploreResoures_card {
+        width: 400px;
+    }
+    .columnDiv_middle-card{
+        width: 370px;
+    }
+    .columnDiv_middle{
+        flex-wrap: wrap;
+    }
+    .footer{
+        flex-direction: column;
+        
+    }
+    .footer_subscription{
+        padding-left: 0;
+        align-items: center;
+        width: 80%;
+    }
+    .discoverProduction{
+        align-items: center;
+    }
+    .footer_title{
+        text-align: center;
+    }
+    .footer_description{
+        text-align: center;
+    }
+    .footer_inputSubmit{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}
+@media screen and (max-width : 1000px) {
+    .welcomeDiv_imageDiv{
+        height: 400px;
+    }
+    .predFooter_title{
+        text-align: center;
+    }
+    .contact_img{
+        display: none;
+    }
+    .footer{
+        padding-top: 50px;
+    }
+}
+@media screen and (max-width : 768px) {
+    .sixCon_img, .rowDiv_rightCon{
+        display: none;
+    }
+    .sixCon_leftCon {
+        width: 80%;
+    }
+    .rowDiv_leftCon{
+        width: 80%;
+    }
+    .columnDiv_top{
+        width: 80%;
+    }
+    .welcomeDiv_motivateTitle{
+        width: 50%;
+    }
+    .welcomeDiv_article{
+        padding-right: 0;
+    }
+    .predFooter > div{
+        width: 80%;
+    }
+    .predFooter_title{
+        text-align: center;
+    }
+    .predFooter_desc{
+        text-align: center;
+    }
+    .predFooter_InputSubmit{
+        width: 80%;
+    }
+    .footer_links{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer_input{
+        width: 300px;
+    }
+    .footer_terms{
+        width: 70%;
+        text-align: center;
+    }
+    .footer_SubmitForm{
+        align-items: center;
+    }
+
+}
+@media screen and (max-width: 675px) {
+    .welcomeDiv_nav{
+        display: none;
+    }
+    .welcomeDiv_button{
+        min-width: 105px;
+    }
+    .welcomeDiv_hiddenMenu{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        position: absolute;
+        top:0;
+        left:0;
+        background-color: #ffffff;
+       
+    }
+    .menu{
+        display: block;
+    }
+    .welcomeDiv_header{
+        padding-left: 20px;
+    }
+
+    .welcomeDiv_section{
+        flex-direction: column;
+        gap: 30px;
+        width: 80%;
+    }
+    .welcomeDiv_motivateTitle{
+        width: 100%;
+        font-size: 36px;
+        margin: 0;
+        text-align: center;
+    }
+    .welcomeDiv_article{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .welcomeDiv_desc{
+        text-align: center;
+    }
+    .welcomeDiv_imageDiv{
+        height: 300px;
+    }
+    .title{
+        font-size: 36px;
+        text-align: center;
+    }
+    .smallText{
+        font-size: 14px;
+    }
+    .description{
+        font-size: 16px;
+    }
+    .columnDiv_title{
+        font-size: 36px;
+        width: 100%;
+    }
+    .exploreResoures_title{
+        font-size: 18px;
+    }
+    .exploreResoures_description{
+        font-size: 14px;
+    }
+    .predFooter_title{
+        font-size: 36px;
+    }
+    .predFooter_desc {
+        font-size: 16px;
+    }
+    .contact_methods{
+        align-items: center; 
+    }
+    .contact_information{
+        width: 200px;
+    }
+    .rowDiv_button-borderless{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 170px;
+    }
+    .exploreResoures_card{
+        align-items: center;
+    }
+    .columnDiv_middle-card{
+        align-items: center;
+    }
+    .columnDiv_middle-cardDesc{
+        text-align: center;
+    }
+     .menu{
+        display: block;
+    }
+    .burger-checkbox {
+        position: absolute;
+        visibility: hidden;
+    }
+    .burger {
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+        display: block;
+        position: relative;
+        border: none;
+        background: transparent;
+        width: 40px;
+        height: 26px;
+    }
+    .burger::before,
+    .burger::after {
+        content: '';
+        left: 0;
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 10px;
+        background: #000;
+    }
+    .burger::before {
+        top: 0;
+        box-shadow: 0 11px 0 #000;
+        transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+    }
+    .burger::after {
+        bottom: 0;
+        transition: bottom .3s .15s, transform .3s;
+    }
+    .burger-checkbox:checked + .burger::before {
+        top: 11px;
+        transform: rotate(45deg);
+        box-shadow: 0 6px 0 rgba(0,0,0,0);
+        transition: box-shadow .15s, top .3s, transform .3s .15s;
+    }
+    .burger-checkbox:checked + .burger::after {
+        bottom: 11px;
+        transform: rotate(-45deg);
+        transition: bottom .3s, transform .3s .15s;
+    }
+    .menu-list {
+        top: 0;
+        left: 0;
+        position: absolute;
+        display: grid;
+        z-index: 1;
+        gap: 17px;
+        padding: 42px 0;
+        margin: 0;
+        background: #F9F8FE;
+        list-style-type: none;
+        transform: translateX(-100%);
+        transition: .3s;
+        width: 100%;
+    }
+    .menu-item {
+        display: block;
+        padding: 8px;
+        color: black;
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+        font-family: var(--Inter);
+    }
+    .menu-item:hover {
+        background: rgba(255,255,255,.2)
+    }
+    .burger-checkbox:checked ~ .menu-list {
+        transform: translateX(0);
+    }
+}
+@media screen and (max-width : 480px) {
+    .welcomeDiv_imageDiv{
+        display: none;
+    }
+    .footer_input{
+        width: 200px;
+    }
+    .discoverProduction{
+        padding: 80px 0;
+    }
+    .columnDiv_cardImg, .exploreResoures_cardImg{
+        width:270px
+    }
+    .rowDiv, .fivesCon{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .contact_methods{
+        width: 80%;
+    }
+    .exploreResoures_card, .columnDiv_middle-card{
+        width: 300px;
+    }
+    .rowDiv_middle{
+        flex-direction: column;
+    }
+    .fourthCon_leftCon{
+        padding-left: 0;
+    }
+    .sixCon_middle-div{
+        width: 80%;
+    }
+    .predFooter_Input{
+        width: 280px
+    }
+    .predFooter_InputSubmit{
+        flex-direction: column;
+    }
+    .footer_inputSubmit{
+        flex-direction: column;
+    }
+    .footer_links{
+        row-gap: 20px;
+    }
+   
 }
