@@ -372,6 +372,7 @@ html, body {
     justify-content: space-around;
     padding: 80px 0;
     gap: 15px;
+    background-color: #F9F8FE;
 }
 .contact_methods{
     display: flex;
@@ -399,4 +400,98 @@ html, body {
 }
 .contact_directions{
     width: 125px;
+}
+.footer{
+    width: 100%;
+    background-color: #F9F8FE;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 73px;
+    padding: 150px 0;
+}
+.footer_links{
+    display: flex;
+    flex-direction: row;
+    gap: 85px;
+    padding-top: 33px;
+}
+.footer_subscription{
+    width: 42%;
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+    padding-left: 81px;
+    flex-direction: column;
+}
+.footer_subscriptionText{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer_description{
+    margin: 0;
+}
+.footer_SubmitForm{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: start;
+    justify-content: space-between;
+}
+.footer_inputSubmit{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.footer_input{
+    width: 430px;
+
+}
+.footer_title{
+    font-size: 32px;
+    margin: 0;
+    font-family: var(--Montserrat);
+    font-weight: 700;
+}
+.footer_columnLinks{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 26px;
+}
+.footer_columnLinks > h2{
+    font-size: 22px;
+    margin: 0;
+}
+.footer_terms{
+    font-size:12px;
+    margin: 0;
+}
+.footer_navigate{
+    display: flex;
+    flex-direction: column;
+    gap: 18px; 
+}
+.footer_navigate-grid{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(4,auto);
+    gap: 18px;
+    column-gap: 10px;
+}
+.footer_navigate > a, .footer_navigate-grid > a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+.footer_social{
+    padding-top: 20px;
 }
