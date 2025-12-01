@@ -5,6 +5,7 @@
     --Black: #000000;
     --White: #FFFFFF;
     --BackGround:#F9F8FE;
+    --Hover-links:#784b4b;
 }
 
 html, body {
@@ -511,6 +512,8 @@ html, body {
 .row-div_right-con > img, .contact_img > img{
     width: 98%;
 }
+
+
 @media screen and (max-width : 1351px) {
     .explore-resoures{
         padding: 40px 0;
@@ -830,4 +833,35 @@ html, body {
         row-gap: 20px;
     }
    
+}
+
+@media (any-hover:hover) {
+    a:hover {
+        color: var(--Hover-links);
+        transition: color 0.3s;
+    }
+    .welcome-div_contact:hover, .welcome-div_button-filled:hover{
+        background-color: white;
+        color: var(--Black);
+        transition: all 0.3s;
+    }
+    .welcome-div_button-empty:hover {
+        background-color: var(--Black);
+        color: var(--White);
+        transition: all 0.3s;
+    }
+    .row-div_button-borderless:hover{
+        color: var(--Hover-links);
+        transition: color 0.3s;
+    }
+    .welcome-div_contact:active, .welcome-div_button-filled:active{
+        background-color: var(--Black);
+        color: var(--White);
+        transition: all 0.1s;
+    }
+    .welcome-div_button-empty:active {
+        background-color: var(--White);
+        color: var(--Black);
+        transition: all 0.1s;
+    }
 }
